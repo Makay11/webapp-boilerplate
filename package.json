@@ -1,0 +1,66 @@
+{
+  "name": "web-app-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Makay11",
+  "license": "ISC",
+  "main": "server/dist/index.js",
+  "scripts": {
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "dev": "cult dev",
+    "start": "node .",
+    "forever": "forever start --uid app --append .",
+    "restart": "forever restart app",
+    "stop": "forever stop app",
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "bcrypt-then": "^1.0.0",
+    "bluebird": "^3.0.5",
+    "body-parser": "^1.14.1",
+    "co": "^4.6.0",
+    "co-next": "^1.0.0",
+    "compression": "^1.6.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "express-joi-validator": "^2.0.0",
+    "forever": "^0.15.1",
+    "helmet": "^0.15.0",
+    "joi": "^6.10.1",
+    "lodash": "^3.10.1",
+    "rand-token": "^0.2.1",
+    "require-dir": "^0.3.0"
+  },
+  "devDependencies": {
+    "browserify-ngannotate": "^2.0.0",
+    "code": "^2.0.1",
+    "cult": "^2.0.6",
+    "del": "^2.0.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify2": "^0.0.2",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-filter": "^3.0.1",
+    "gulp-if": "^2.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.0.6",
+    "gulp-uglify": "^1.4.2",
+    "jadeify": "^4.4.0",
+    "lab": "^8.0.0",
+    "nodemon": "^1.7.2",
+    "run-sequence": "^1.1.2",
+    "supertest": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Makay11/webapp-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/Makay11/webapp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Makay11/webapp-boilerplate"
+}
